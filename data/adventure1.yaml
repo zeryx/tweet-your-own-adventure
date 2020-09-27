@@ -1,0 +1,50 @@
+
+# This is an example of an adventure file.
+# Each fragment of the story links to other fragments via their ID, if the next ID is None, then that's a terminator to the story.
+
+
+story:
+  - id: 0
+    body: "This is the start of the journey, you can either select the left path, leading deeper into the forest or the right path,
+    which leads you towards a creaky cottage."
+    options:
+      left:
+        id: 1
+        body: "Take the left path"
+      right:
+        id: 2
+        body: "Take the right path"
+  - id: 1
+    body: "You walk further into the woods. You see a large tree with an axe beside it, do you cut the tree?, or do you just take the axe?"
+    options:
+      left:
+        id: 3
+        body: "You take the axe and cut the tree"
+      right:
+        id: 4
+        body: "You take the axe and leave the tree alone"
+  - id: 2
+    body: "You walk towards the creaky cottage, it looks abandoned. Do you enter, or continue along the nearby road?"
+    options:
+      left:
+        id: 5
+        body: "You enter the cottage"
+      right:
+        id: 6
+        body: "You ignore the house and walk along the road"
+  - id: 3
+    body: "You swing at the tree, but unfortunately it falls on you. This is the story end."
+    options:
+      end: true
+  - id: 4
+    body: "You hug the axe as you walk deeper into the dense wood, unfortunately you get lost and eventually the wolves come for you. This is the end."
+    options:
+      end: true
+  - id: 5
+    body: "As you enter the cottage, you discover that it's booby trapped too late. This is the end"
+    options:
+      end: true
+  - id: 6
+    body: "You make the sensible body to leave, you eventually find some helpful people along the way who help you get home. You live happily ever after!"
+    options:
+      end: true
