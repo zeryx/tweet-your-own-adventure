@@ -6,7 +6,7 @@ Just a little tool to enable you to craft choose your own adventure stories on T
 
 This is a work in progress, but to get started ensure that you have a twitter developer account: https://developer.twitter.com
 
-Add your credentials to [credentialsExample.yaml][credentialsExample.yaml] and update [adventure1.yaml][data/adventure1.yaml] to reflect the story you wish to tell.
+Add your credentials to [credentialsExample.yaml](credentialsExample.yaml) and update [adventure1.yaml](data/adventure1.yaml) to reflect the story you wish to tell.
 
 You can see an example story thread here: https://twitter.com/zeryx1211/status/1310289778189807616
 
