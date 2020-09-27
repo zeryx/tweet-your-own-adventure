@@ -1,8 +1,8 @@
-# tweet-an-adventure
+# Tweet your own adventure
 
 <img src="https://i.imgur.com/MkHvB10.png"/>
 
-A tool to enable you to craft choose your own adventure stories on Twitter
+Just a little tool to enable you to craft choose your own adventure stories on Twitter
 
 This is a work in progress, but to get started ensure that you have a twitter developer account: https://developer.twitter.com
 
