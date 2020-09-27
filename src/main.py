@@ -53,8 +53,3 @@ def create_adventure(adventure_path, api):
     twitter_tree = create_twitter_story(local_tree, api)
     return twitter_tree
 
-
-
-if __name__ == "__main__":
-    api = parse_credentials(credential_path)
-    result = create_adventure(adventure_path, api)

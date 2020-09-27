@@ -1,7 +1,7 @@
 
 from src import main
 
-adventure_path = "data/adventure1.yaml"
+adventure_path = "data/adventure_simple.yaml"
 credential_path = "credentials.yaml"
 
 if __name__ == "__main__":

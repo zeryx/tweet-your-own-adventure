@@ -2,6 +2,9 @@ from __future__ import annotations
 
 from src.local_fragment import LocalFragment
 from tweepy.api import API
+import pyshorteners
+
+shortener = pyshorteners.Shortener()
 
 
 class TwitterFragment:
@@ -31,5 +34,7 @@ class TwitterFragment:
         self.right['tweet'] = right.tweet
         left_tweet_url = "https://twitter.com/{}/status/{}".format(username, left.tweet.id)
         right_tweet_url = "https://twitter.com/{}/status/{}".format(username, right.tweet.id)
-        tweepy_api.update_status("{} \n {}".format(self.left['body'], left_tweet_url), in_reply_to_status_id=self.tweet.id)
-        tweepy_api.update_status("{} \n {}".format(self.right['body'], right_tweet_url), in_reply_to_status_id=self.tweet.id)
+        left_shortened = shortener.tinyurl.short(left_tweet_url)
+        right_shortened = shortener.tinyurl.short(right_tweet_url)
+        tweepy_api.update_status("{} \n {}".format(self.left['body'], left_shortened), in_reply_to_status_id=self.tweet.id)
+        tweepy_api.update_status("{} \n {}".format(self.right['body'], right_shortened), in_reply_to_status_id=self.tweet.id)
